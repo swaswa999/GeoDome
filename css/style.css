@@ -1,0 +1,592 @@
+/* General Styles */
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #F5F5F5;
+    font-family: 'Times New Roman', Times, serif;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: black;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+p{
+    line-height: 1.9;
+    font-size: 1.3rem;
+    font-weight:0;
+}
+
+.bookNow {
+    margin: 0;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: black;
+    transition: 0.7s;
+    color: #F5F5F5; 
+    text-decoration: none;
+}
+
+.bookNow:hover {
+    background-color: #fff;
+    color: black;
+    transition: 0.7s;
+}
+
+
+/* Header Styles */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Slightly darker semi-transparent background */
+    color: #fff;
+    padding: 20px 0; /* Increase padding for better visibility */
+    z-index: 1000;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition for both background and text color */
+}
+
+/* Remove hover effect */
+header:hover {
+    background-color: rgba(0, 0, 0, 0.5); /* Keep the original background color on hover */
+    color: #fff; /* Keep the text color white on hover */
+}
+
+/* Ensure link colors do not change on hover */
+header:hover nav ul li a {
+    color: #fff;
+}
+
+/* Additional styles for ensuring correct layout and appearance */
+body {
+    margin: 0; 
+    padding: 0; 
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.logo img {
+    height: 50px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    margin: 0;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease; /* Smooth transition for text color */
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Hero Styles */
+.hero {
+    background: url('../img/background-image.jpg') no-repeat center center/cover;
+    color: #fff;
+    padding: 100px 20px;
+    margin-top: 0px; /* Removed the top margin to ensure the hero section starts right under the header */
+    display: flex; /* Use flexbox to align content */
+    align-items: flex-start; /* Align items to the start of the container */
+    justify-content: flex-start; /* Align items to the start of the container */
+    min-height: 625px;
+}
+
+.hero-content {
+    padding-left: 40px;
+    max-width: 100%;
+    margin: 0;
+    text-align: left; /* Align text to the left */
+}
+
+#hero-head {
+    margin-top: 250px;
+    font-weight: lighter;
+    font-size: 3.9rem;   /*1.9 rem orig*/
+    color: white;
+    margin-bottom: 20px;
+}
+
+
+h1,h2{
+    font-weight:lighter;
+    font-size: 3rem;
+    color: black;
+    
+}
+
+h3{
+    font-weight:lighter;
+    font-size: 2rem;
+    color: black;
+    
+}
+
+#hero-p {
+    font-size: 1.25rem;
+    margin-bottom: 30px;
+}
+
+#heroBookNow{
+    margin: 0;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: transparent;
+    border: 2px solid #F5F5F5;
+    transition: 0.7s;
+    color: white; 
+    text-decoration: none;
+    font-size: 1.4rem;
+}
+
+#heroBookNow:hover {
+    background-color: #fff;
+    color: black;
+    transition: 0.7s;
+}
+
+.bookNow {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1rem;
+    text-decoration: none;
+    border-radius: 5px;
+    background-color: black; /* Ensure background color is black */
+    color: #F5F5F5; /* Ensure text color is light */
+}
+
+
+/*Body*/
+.body{
+    width: 100%;
+
+}
+/* About */
+.about {
+    padding: 40px;
+    padding-bottom: 0;
+    display: flex;
+    box-sizing: border-box;
+    overflow: hidden; /* Prevents overflow */
+}
+
+#about-info {
+    width: 40%;
+    box-sizing: border-box;
+}
+
+#about-title {
+    font-weight:lighter;
+    font-size: 3rem;
+    color: black;
+}
+
+#about-p {
+    margin-bottom: 20px;
+    margin-right: 70px;
+}
+
+#about-photo {
+    width: 60%;
+    height: auto;
+    display: flex;
+    justify-content: center; /* Center the image horizontally */
+    align-items: center; /* Center the image vertically */
+    box-sizing: border-box;
+}
+
+#about-img {
+    max-width: 95%;
+    height: auto;
+    object-fit:fill;
+    padding-left: 0; /* Remove left padding */
+    padding-bottom: 40px;
+}
+
+.Book-now-white{
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    transition: 0.7s;
+    background-color: #F5F5F5;
+    border: #F5F5F5;
+    border: 2px solid black;
+    color: black;
+    text-decoration: none;
+    border-radius: 5px;
+    
+}
+
+.Book-now-white:hover {
+    background-color: black;
+    color: #F5F5F5;
+    transition: 0.7s;
+}
+
+@media screen and (max-width: 768px) {
+    .about {
+        flex-direction: column;
+    }
+
+    .hero-content{
+        padding-left: 0px
+    }
+    
+    #about-info {
+        width: 100%; /* Ensure info takes full width on small screens */
+        margin-bottom: 20px; /* Add space between info and photo on small screens */
+    }
+
+    #about-photo {
+        width: 100%; /* Ensure photo takes full width on small screens */
+        justify-content: center; /* Center the image horizontally */
+    }
+
+    #about-img {
+        width: 100%; /* Make the image responsive */
+        max-width: 100%; /* Ensure image fits within its container */
+    }
+}
+/*Immerse*/
+
+.immerse {
+    padding: 40px;
+    padding-bottom: 0;
+    display: flex;
+    box-sizing: border-box;
+    overflow: hidden; /* Prevents overflow */
+    background-color: #eaeaea;
+}
+
+#immerse-info {
+    width: 40%;
+    box-sizing: border-box;
+}
+
+#immerse-title {
+    font-weight:lighter;
+    font-size: 3rem;
+    color: black;
+}
+
+#immerse-p {
+    margin-bottom: 20px;
+    margin-right: 70px;
+}
+
+#immerse-photo {
+    width: 60%;
+    height: auto;
+    display: flex;
+    justify-content: center; /* Center the image horizontally */
+    align-items: center; /* Center the image vertically */
+    box-sizing: border-box;
+    padding-bottom: 40px;
+    padding-right: 40px;
+}
+
+#immerse-img {
+    max-width: 95%;
+    height: auto;
+    object-fit:fill;
+    padding-left: 0; /* Remove left padding */
+}
+
+@media screen and (max-width: 768px) {
+    .immerse {
+        flex-direction: column;
+    }
+    
+    #immerse-info {
+        width: 100%; /* Ensure info takes full width on small screens */
+        margin-bottom: 20px; /* Add space between info and photo on small screens */
+    }
+
+    #immerse-photo {
+        width: 100%; /* Ensure photo takes full width on small screens */
+        justify-content: center; /* Center the image horizontally */
+    }
+
+    #immerse-img {
+        width: 100%; /* Make the image responsive */
+        max-width: 100%; /* Ensure image fits within its container */
+    }
+}
+
+/*  */
+.unwind {
+    padding: 40px;
+    padding-bottom: 0;
+    display: flex;
+    box-sizing: border-box;
+    overflow: hidden; /* Prevents overflow */
+}
+
+#unwind-info {
+    width: 40%;
+    box-sizing: border-box;
+}
+
+#unwind-title {
+    font-weight:lighter;
+    font-size: 3rem;
+    color: black;
+}
+
+#unwind-p {
+    margin-bottom: 20px;
+    margin-right: 70px;
+}
+
+#unwind-photo {
+    width: 60%;
+    height: auto;
+    display: flex;
+    justify-content: center; /* Center the image horizontally */
+    align-items: center; /* Center the image vertically */
+    box-sizing: border-box;
+}
+
+#unwind-img {
+    max-width: 95%;
+    height: auto;
+    object-fit:fill;
+    padding-left: 0; /* Remove left padding */
+    padding-bottom: 20px;
+    border-radius: 30px;
+}
+
+@media screen and (max-width: 768px) {
+    .unwind {
+        flex-direction: column;
+    }
+    #unwind-info {
+        width: 100%; /* Ensure info takes full width on small screens */
+        margin-bottom: 20px; /* Add space between info and photo on small screens */
+    }
+
+    #unwind-photo {
+        width: 100%; /* Ensure photo takes full width on small screens */
+        justify-content: center; /* Center the image horizontally */
+    }
+
+    #unwind-img {
+        width: 100%; /* Make the image responsive */
+        max-width: 100%; /* Ensure image fits within its container */
+    }
+}
+/* sub ammenities */
+
+.sub-ammenities {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.sub-ammenity-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px; /* Add some margin between items */
+}
+
+#sub-ammenities-title{
+    text-align: center;
+    width: 100%;
+    flex: none;
+}
+
+.sub-ammenities-img {
+    max-height: 190px;
+    width: auto;
+    padding: 3%;
+    padding-left: 1%;
+    padding-right: 1%;
+}
+
+.sub-ammenity-label {
+    margin-top: 10px; /* Add space between the image and label */
+    font-size: 16px; /* Adjust the font size of the label */
+    text-align: center;
+    color: #333; /* Change the color to match your theme */
+}
+
+
+/* Day In A Life */
+
+.day-in-a-life{
+    background-color: #eaeaea;
+    text-align: center;
+    width: 100%;
+}
+
+#day-in-a-life-header{
+    padding-top: 40px;
+}
+
+.day-in-a-life-container{
+    height: 700px;
+    max-width: 100%;
+    padding: 40px;
+}
+
+/* Testimonials */
+.testimonials{
+    padding: 0px;
+    padding: 40px;
+    text-align: center;
+    justify-content: center;
+    height: auto;
+}
+
+.testimonials-container{
+    display: flex;
+    min-width: 0;
+    width: 100%;
+    flex-direction: row;
+    height: auto;
+    justify-content: center;
+}
+
+.testimonials-parent{
+    padding: 20px;
+    width: 30%;
+}
+
+@media screen and (max-width: 768px) {
+    .testimonials{
+        padding-left: 0;
+    }
+    #testimonials-head{
+        margin-left: 40px;
+    }
+    .testimonials-container{
+        flex-direction: column;
+    }
+    .testimonials-parent{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .testimonials-container{
+        flex-direction: column;
+    }
+    .testimonials-parent{
+        width: 100%;
+    }
+}
+
+
+
+#testimonials-author{
+    font-weight: bold;
+}
+
+/* FAQ */
+.faq {
+    display: flex;
+    width: 100%;
+    padding: 40px;
+    background-color: #F5F5F5;
+    color: black;
+    box-sizing: border-box;
+}
+
+#faq-text {
+    width: 100%;
+    margin-right: 40px;
+    box-sizing: border-box;
+}
+
+#faq-photo {
+    width: 50%;
+    box-sizing: border-box;
+}
+
+.faq-title {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.section-title {
+    font-size: 24px;
+    color: #333;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #ddd;
+    margin-bottom: 10px;
+}
+
+.faq-item {
+    margin-bottom: 10px;
+}
+
+.faq-question {
+    background-color: #eaeaea;
+    color: #333;
+    border: none;
+    padding: 15px;
+    width: 100%;
+    text-align: left;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+.faq-question:hover {
+    background-color: #d5d5d5;
+}
+
+.faq-answer {
+    display: none;
+    padding: 15px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+.faq-img {
+    width: 100%;
+    padding-top: 700px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+@media screen and (max-width: 768px) {
+    .faq {
+        flex-direction: column;
+    }
+
+    #faq-text, #faq-photo {
+        width: 100%;
+    }
+}
